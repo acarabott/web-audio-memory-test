@@ -1,0 +1,19 @@
+{
+  "name": "web-audio-memory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "start": "npm run build && npm run watch & npm run serve",
+    "serve": "npx browser-sync start --config bs-config.js",
+    "build": "tsc -p .",
+    "watch": "tsc -w -p ."
+  }
+}

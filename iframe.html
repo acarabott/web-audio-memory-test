@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IFrame</title>
+  <script src="./dist/iframe.js" type="module" crossorigin="anonymous"></script>
+  <style>
+    button {
+      margin-right: 20px;
+      display: block;
+      margin: 20px 0;
+    }
+
+    input[type=number] {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>iframe</h2>
+  <div id="stats"></div>
+  <label for="buffer-count">Number of Buffers to load</label>
+  <input type="number" name="buffer-count" id="buffer-count" min="0" value="20">
+  <button id="load">Load Buffers</button>
+  <button id="zero">Zero Buffers</button>
+  <button id="delete-buffers">Delete Buffer References</button>
+  <button id="close">Close AudioContext</button>
+  <button id="delete">Delete AudioContext Reference</button>
+</body>
+</html>
