@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Audio Memory Test</title>
-  <script src="./dist/index.js" type="module" crossorigin="anonymous"></script>
-  <style>
-  iframe {
-    border: 1px black solid;
-    width: 100%;
-    display: block;
-  }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Web Audio Memory Test</title>
+        <script src="./dist/index.js" type="module" crossorigin="anonymous"></script>
+        <style>
+            iframe {
+                border: 1px black solid;
+                width: 100%;
+                display: block;
+            }
 
-  button {
-    margin-bottom: 20px;
-  }
-  </style>
-</head>
-<body>
-  <h1>Web Audio Memory Test</h1>
-  <button id="reload">Reload iframe</button>
-  <button id="remove">Remove IFrame</button>
-  <iframe id="iframe" src="./iframe.html" width="1000" height="500" frameborder="0"></iframe>
-</body>
+            button {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web Audio Memory Test</h1>
+        <canvas id="usage"> </canvas>
+        <div>
+            <button id="reload">Reload iframe</button>
+            <button id="remove">Remove IFrame</button>
+        </div>
+        <iframe id="iframe" src="./iframe.html" width="1000" height="500" frameborder="0"></iframe>
+    </body>
 </html>
